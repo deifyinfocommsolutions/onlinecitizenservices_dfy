@@ -126,11 +126,6 @@ then
 	echo "DB_HOST= localhost" | tee -a "$final_path/db_info.txt"
 fi
 
-ynh_replace_string "__dbusername__" "$db_user" ../sources/install/html.php
-ynh_replace_string "__dbpassword__" "$db_pwd" ../sources/install/html.php
-ynh_replace_string "__dbname__" "$db_name" ../sources/install/html.php
-ynh_replace_string "__superadminemail__" "$admin@$domain" ../sources/install/html.php
-
 #=================================================
 # CREATE DEDICATED USER
 #=================================================
